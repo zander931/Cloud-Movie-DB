@@ -1,6 +1,5 @@
 flask
-requests
-datetime
 jsonify
+datetime
 python-dotenv
 psycopg2-binary
