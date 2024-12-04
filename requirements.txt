@@ -1,0 +1,6 @@
+flask
+requests
+datetime
+jsonify
+python-dotenv
+psycopg2-binary
