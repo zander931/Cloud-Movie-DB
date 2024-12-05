@@ -23,7 +23,12 @@ def validate_sort_order(order_by):
 @app.route("/", methods=["GET"])
 def endpoint_index():
     '''Landing'''
-    return jsonify({"message": "Welcome to the Movie API"})
+    return jsonify({"message": "Welcome to the Movie API",
+                    "endpoints": {
+                        "@app.route('/genres/<int:genre_id > '": "methods=['GET'])",
+                        "@app.route('/countries/<string:country_code > '": "methods=['GET'])",
+                        "@app.route('/movies/<int:movie_id > '": "methods=['GET', 'PATCH', 'DELETE'])",
+                        "@app.route('/movies'": "methods=['GET', 'POST'])"}})
 
 
 @app.route("/movies", methods=["GET", "POST"])
